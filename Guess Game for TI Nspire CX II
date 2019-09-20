@@ -1,0 +1,26 @@
+Define guess(a)
+Pgrm
+If gmn = 0 Then
+Disp "Guess a number between 1 and 100"
+Disp "Type guess() with the guess in the parenthesis"
+randInt (1,100)➝b
+1➝gmn
+Stop
+EndIf
+If a>b Then
+Disp "Lower"
+Else If a<b Then
+Disp "Higher"
+ElseIf a=b Then
+Disp "You Win!"
+0➝gmn
+Stop
+EndIf
+gmn + 1➝gmn
+If gmn>7 Then
+Disp "You Lose."
+Disp "Answer was"
+Disp b
+0➝gmn
+EndIf
+EndPgrm
